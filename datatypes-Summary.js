@@ -35,3 +35,27 @@ console.log(typeof greet);//function
 console.log(typeof myObject);//object
 console.log(typeof heroes);//object
 greet(); //Hello
+
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// Stack (Primitive Data Types), Heap (Non-Primitive Data Types)
+
+let myYoutubeName = "Harsh Khaiwal";
+
+let anotherName = myYoutubeName
+anotherName = "Harry"
+
+console.log(myYoutubeName); //Harsh Khaiwal
+console.log(anotherName); //Harry
+
+let userOne ={
+    email: "harshkhaiwal@gmail.com",
+    upi: "harshkhai@upi"
+}
+
+let userTwo = userOne;
+
+userTwo.email = "ashdk@gmail.com";
+
+console.log(userOne.email); //ashdk@gmail.com
