@@ -13,6 +13,7 @@ const JsUser = {
     location: 'India',
     isLoggedIn: false,
     lastLoginDays: ["Monday", "Tuesday"]
+
 }
 
 console.log(JsUser)
@@ -26,7 +27,9 @@ JsUser.email = 'chintukhaiwal@gmail.com'
 console.log(JsUser)
 
 JsUser.greeting = function(){
-    console.log("Hello, I am Harsh")
+    console.log(`Hello, I am  ${this.name}`)
 }
+console.log(JsUser.greeting());
+
 
 
